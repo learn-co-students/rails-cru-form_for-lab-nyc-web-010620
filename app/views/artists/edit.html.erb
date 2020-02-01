@@ -1,2 +1,6 @@
-<h1>Artists#edit</h1>
-<p>Find me in app/views/artists/edit.html.erb</p>
+<h1>What would you like to update?</h1>
+<%= form_for @artist do |f|%>
+Artist Name: <%=f.text_field :name%>
+Artist Bio: <%=f.text_field :bio%>
+<%= f.submit %>
+<%end%>
