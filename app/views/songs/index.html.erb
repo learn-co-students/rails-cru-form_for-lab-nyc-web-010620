@@ -1,0 +1,4 @@
+<h1>Song List:</h1>
+<%= @song.each.with_index do |f, index| %>
+    <p><%= index + 1%> <%= link_to f.name, f %></p><br>
+<%end%>
